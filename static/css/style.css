@@ -140,6 +140,7 @@ h2 {
   margin-bottom: 20px;
   color: #00ffe0;
   text-shadow: 0 0 8px #00ffe0;
+  text-align: center;
 }
 
 /* Hero Image / Avatar */
@@ -228,8 +229,7 @@ form label {
   color: #00eaff;
 }
 
-form input,
-form textarea {
+form input, form textarea {
   width: 100%;
   padding: 15px;
   border: 2px solid rgba(0, 255, 255, 0.2);
