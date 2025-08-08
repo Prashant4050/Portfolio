@@ -17,14 +17,14 @@ projects = [
     {
         'title': 'Face Recognition Attendance System',
         'description': 'A Python-React based app that marks attendance using face recognition.',
-        'tech': 'Python, React, MongoDB, Node.js',
-        'github': 'https://github.com/yourusername/face-attendance'
+        'tech': 'React, MongoDB, Node.js',
+        'github': 'https://github.com/het0305/facedetection'
     },
     {
-        'title': 'Book Swap App',
+        'title': 'Flipy App',
         'description': 'React-based web app for Hindu literature book exchange.',
-        'tech': 'React, Firebase',
-        'github': 'https://github.com/yourusername/book-swap'
+        'tech': 'React, Node.js, MongoDB',
+        'github': 'https://github.com/het0305/flipy'
     }
 ]
 

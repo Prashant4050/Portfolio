@@ -7,15 +7,34 @@
 </head>
 <body>
   <header>
-    <h1><a href="/">My Portfolio</a></h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/projects">Projects</a>
-      <a href="/resume">Resume</a>
-      <a href="/contact">Contact</a>
-    </nav>
+  <div class="nav-container">
+      <div class="nav-left">
+       <h1>Malaviya Prashant</h1>
+       <div class="nav-contact-info">
+         <span>Email: <a href="mailto:malaviyaprashant4050@gmail.com">malaviyaprashant4050@gmail.com</a></span>
+         <span>Phone: <a href="tel:+919925858300">+91 9925858300</a></span>
+       </div>
+     </div>
+
+     <nav class="nav-links">
+       <a href="/">Home</a>
+       <a href="/about">About</a>
+       <a href="/projects">Projects</a>
+       <a href="/resume">Resume</a>
+       <a href="/contact">Contact</a>
+     </nav>
+
+     <div class="nav-icons">
+       <a href="https://github.com/Prashant4050" target="_blank" title="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/prashant_malaviya_95/" target="_blank" title="Instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+       </a>
+      </div>
+    </div>
   </header>
+
   <main>
     {% block content %}{% endblock %}
   </main>
