@@ -93,6 +93,7 @@ header h1 a {
 .nav-links {
   display: flex;
   gap: 18px;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -210,7 +211,7 @@ h2::after {
 
 /* ==== Hero Image ==== */
 .hero-image {
-  flex: 0 0 220px; /* Smaller fixed size for right image */
+  flex: 0 0 220px;
   display: flex;
   justify-content: center;
 }
@@ -363,13 +364,45 @@ footer {
   animation: slideIn 0.8s ease;
 }
 
-/* ==== Responsive ==== */
-@media (max-width: 768px) {
+/* ==== Responsive - Tablets ==== */
+@media (max-width: 1024px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
   .hero {
     flex-direction: column-reverse;
     text-align: center;
   }
-  .hero-image {
-    margin-bottom: 20px;
+}
+
+/* ==== Responsive - Mobile ==== */
+@media (max-width: 600px) {
+  header h1 a {
+    font-size: 1.5rem;
+  }
+  .nav-left h1 {
+    font-size: 1.6rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-text .subtitle {
+    font-size: 0.9rem;
+  }
+  .hero-image img {
+    width: 150px;
+    height: 150px;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  main p {
+    font-size: 0.9rem;
   }
 }
