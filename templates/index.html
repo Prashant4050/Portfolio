@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>Welcome to My Portfolio Website</h2>
-<p>I’m a 3rd year IT student passionate about web development and Python projects.</p>
-<img src="{{ url_for('static', filename='images/profile.jpg') }}" width="200">
+<div class="hero">
+    <div class="hero-text">
+        <h1>Hello, I’m <span class="highlight">Prashant Malaviya</span></h1>
+        <p class="subtitle">3rd Year IT Student | Web Developer | Python Enthusiast</p>
+        <a href="{{ url_for('projects_page') }}" class="btn">View My Projects</a>
+    </div>
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/prashant.jpg') }}" alt="Profile Photo">
+    </div>
+</div>
 {% endblock %}

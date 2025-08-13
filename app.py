@@ -42,7 +42,8 @@ def projects_page():
 
 @app.route('/resume')
 def resume():
-    return send_file("resume.pdf", as_attachment=True)
+    return send_file("Resume.pdf", mimetype='application/pdf')
+
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
@@ -51,11 +52,10 @@ def contact():
         email = request.form['email']
         message = request.form['message']
 
-        # ✅ Compose and send the email
         msg = Message(
             subject=f"New message from {name}",
             sender=app.config['MAIL_DEFAULT_SENDER'],
-            recipients=['yourgmail@gmail.com'],  # where you receive the message
+            recipients=['malaviyaprashant4050@gmail.com'],  
             body=f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
         )
         mail.send(msg)
