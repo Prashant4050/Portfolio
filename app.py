@@ -28,6 +28,10 @@ projects = [
     }
 ]
 
+@app.route('/google8b5102ce5d21bbf6.html')
+def google_verification():
+    return render_template('google8b5102ce5d21bbf6.html')
+
 @app.route('/')
 def index():
     return render_template('index.html')
